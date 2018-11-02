@@ -1,3 +1,5 @@
+import Car from "./CarClass";
+
 export default class People {
 
     private name: string        = '';
@@ -26,7 +28,8 @@ export default class People {
         return this.car;
     }
 
-    public buyCar(): void {
+    public buyCar(): boolean {
 
+        return true;
     }
 }

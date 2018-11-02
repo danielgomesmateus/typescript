@@ -1,9 +1,11 @@
+import Car from "./CarClass";
+
 export default class Dealerships {
 
     private address: string = '';
-    private listCars: any;
+    private listCars: Array<Car>;
 
-    constructor(address: string, listCars: any) {
+    constructor(address: string, listCars: Array<Car>) {
         
         this.address  = address;
         this.listCars = listCars;
@@ -14,8 +16,8 @@ export default class Dealerships {
         return this.address;
     }
 
-    public getListCars(): any {
-
+    public getListCars(): Array<Car> {
+        
         return this.listCars;
     }
 }

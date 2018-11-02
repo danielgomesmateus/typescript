@@ -19,6 +19,7 @@ var People = /** @class */ (function () {
         return this.car;
     };
     People.prototype.buyCar = function () {
+        return true;
     };
     return People;
 }());
