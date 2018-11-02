@@ -1,5 +1,3 @@
-import Car from "./CarClass";
-
 export default class People {
 
     private name: string        = '';

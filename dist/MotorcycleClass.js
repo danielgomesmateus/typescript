@@ -17,18 +17,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var VehicleClass_1 = __importDefault(require("./VehicleClass"));
-var Car = /** @class */ (function (_super) {
-    __extends(Car, _super);
-    function Car(model, numberDoors) {
+var Motorcycle = /** @class */ (function (_super) {
+    __extends(Motorcycle, _super);
+    function Motorcycle() {
         var _this = _super.call(this) || this;
-        _this.model = model;
-        _this.numberDoors = numberDoors;
         _this.speedUp();
         return _this;
     }
-    Car.prototype.getNumberDoors = function () {
-        return this.numberDoors;
-    };
-    return Car;
+    return Motorcycle;
 }(VehicleClass_1.default));
-exports.default = Car;
+exports.default = Motorcycle;

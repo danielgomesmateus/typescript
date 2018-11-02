@@ -3,8 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// Carrega as classes
 var CarClass_1 = __importDefault(require("./CarClass"));
+var MotorcycleClass_1 = __importDefault(require("./MotorcycleClass"));
 var DealershipsClass_1 = __importDefault(require("./DealershipsClass"));
 var PeopleClass_1 = __importDefault(require("./PeopleClass"));
 (function () {
@@ -27,4 +27,6 @@ var PeopleClass_1 = __importDefault(require("./PeopleClass"));
             return;
         }
     });
+    var motorcycle = new MotorcycleClass_1.default();
+    console.log("Velocidade da moto: " + motorcycle.currentSpeed());
 })();

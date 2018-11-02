@@ -1,5 +1,6 @@
-// Carrega as classes
+import Vehicle from './VehicleClass';
 import Car from './CarClass';
+import Motorcycle from './MotorcycleClass';
 import Dealerships from './DealershipsClass';
 import People from './PeopleClass';
 
@@ -32,4 +33,7 @@ import People from './PeopleClass';
             return;
         }
     });
+
+    let motorcycle = new Motorcycle();
+    console.log(`Velocidade da moto: ${motorcycle.currentSpeed()}`);
 })();
