@@ -1,10 +1,18 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var Car = /** @class */ (function () {
-    function Car() {
-        this.model = '';
-        this.numberDoors = 0;
+    function Car(model, numberDoors) {
         this.velocity = 0;
+        this.model = model;
+        this.numberDoors = numberDoors;
+        this.speedUp();
     }
+    Car.prototype.getModel = function () {
+        return this.model;
+    };
+    Car.prototype.getNumberDoors = function () {
+        return this.numberDoors;
+    };
     Car.prototype.speedUp = function () {
         this.velocity = this.velocity + 10;
     };
@@ -16,3 +24,4 @@ var Car = /** @class */ (function () {
     };
     return Car;
 }());
+exports.default = Car;

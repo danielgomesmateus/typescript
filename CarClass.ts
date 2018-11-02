@@ -1,8 +1,26 @@
-class Car {
+export default class Car {
 
-    private model: string       = '';
-    private numberDoors: number = 0;
-    private velocity: number    = 0;
+    private model: string;
+    private numberDoors: number;
+    private velocity: number = 0;
+
+    constructor(model: string, numberDoors: number) {
+
+        this.model       = model;
+        this.numberDoors = numberDoors;
+
+        this.speedUp();
+    }
+
+    public getModel(): string {
+
+        return this.model;
+    }
+
+    public getNumberDoors(): number {
+
+        return this.numberDoors;
+    }
 
     public speedUp(): void {
 
