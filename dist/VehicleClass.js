@@ -9,7 +9,7 @@ var Vehicle = /** @class */ (function () {
         return this.model;
     };
     Vehicle.prototype.speedUp = function () {
-        this.velocity = this.velocity + 10;
+        this.velocity += 10;
     };
     Vehicle.prototype.break = function () {
         this.velocity = 0;

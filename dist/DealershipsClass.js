@@ -12,6 +12,9 @@ var Dealerships = /** @class */ (function () {
     Dealerships.prototype.getListCars = function () {
         return this.listCars;
     };
+    Dealerships.prototype.operatingHours = function () {
+        return 'Horário de funcionamento: 08:00 às 18:00';
+    };
     return Dealerships;
 }());
 exports.default = Dealerships;

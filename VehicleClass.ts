@@ -10,7 +10,7 @@ export default class Vehicle {
 
     public speedUp(): void {
 
-        this.velocity = this.velocity + 10;
+        this.velocity += 10;
     }
 
     public break(): void {

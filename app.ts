@@ -30,6 +30,8 @@ import People from './PeopleClass';
             console.log('Carro encontrado! Fazendo o pedido...');
             client.buyCar();
             console.log('Carro comprado com sucesso!');
+            console.log('Agende para retirada do veículo.');
+            console.log(dealerships.operatingHours());
             return;
         }
     });

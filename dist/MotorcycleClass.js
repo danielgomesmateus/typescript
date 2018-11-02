@@ -24,6 +24,9 @@ var Motorcycle = /** @class */ (function (_super) {
         _this.speedUp();
         return _this;
     }
+    Motorcycle.prototype.speedUp = function () {
+        this.velocity += 15;
+    };
     return Motorcycle;
 }(VehicleClass_1.default));
 exports.default = Motorcycle;

@@ -9,4 +9,9 @@ export default class Motorcycle extends Vehicle {
 
         this.speedUp();
     }
+
+    public speedUp(): void {
+
+        this.velocity += 15;
+    }
 }

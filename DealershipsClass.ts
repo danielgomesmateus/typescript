@@ -1,6 +1,7 @@
-import Car from "./CarClass";
+import DealershipsInterface from './DealershipsInterface';
+import Car from './CarClass';
 
-export default class Dealerships {
+export default class Dealerships implements DealershipsInterface {
 
     private address: string = '';
     private listCars: Array<Car>;
@@ -19,5 +20,10 @@ export default class Dealerships {
     public getListCars(): Array<Car> {
         
         return this.listCars;
+    }
+
+    public operatingHours(): string {
+
+        return 'Horário de funcionamento: 08:00 às 18:00';
     }
 }
